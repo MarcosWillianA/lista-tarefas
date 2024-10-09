@@ -14,12 +14,16 @@
     <main>
         <section>
             <div id="container">
-                <input type="text" name="escrever-tarefa" id="escreverTarefa">
-                <button id="adicionarTarefa">Adicionar</button>
-                <ul>
-                    <li>
-                        <input type="radio" name="tarefa-marcada" class="tarefaMarcada">
-                        <p class="tarefa"></p>
+                <div id="adicionador-tarefas">
+                    <input type="text" name="escrever-tarefa" id="escreverTarefa" placeholder="Escreva aqui uma tarefa">
+                    <button id="adicionarTarefa">Adicionar</button>
+                </div>
+                <ul id="listaTarefas">
+                    <li class="itemLista">
+                        <input type="radio" name="tarefa" class="tarefa">
+                        <label for="tarefa">
+                            
+                        </label>
                         <span class="X"></span>
                     </li>
                 </ul>
