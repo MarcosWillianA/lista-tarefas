@@ -100,7 +100,11 @@ ul li {
     justify-self: flex-end;
 }
 
-ul li.marcado {
+.remover:active {
+    background-color: #991b1b;
+}
+
+ul li p.marcado {
     color: var(--var02);
     text-decoration: line-through;
 }

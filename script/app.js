@@ -13,15 +13,25 @@ adicionarTarefa.addEventListener('click', () => {
         let tarefaEscrita = escreverTarefa.value;
         console.log(tarefaEscrita);
         let li = document.createElement('li');
-        li.classList.add('tarefasNaLista');
-        li.innerHTML = tarefaEscrita;
+        let p = document.createElement('p');
+        let remover = document.createElement('button');
+        
+        p.classList.add('tarefasNaLista');
+        p.innerHTML = tarefaEscrita;
+        remover.classList.add('remover');
+        remover.innerHTML = 'X';
+        
         listaTarefas.appendChild(li);
+        li.appendChild(p);
+        li.appendChild(remover);
         escreverTarefa.value = '';
 
-        li.addEventListener('click', () => {
+        p.addEventListener('click', () => {
             console.log('clicou');
-            li.classList.add('marcado');
+            p.classList.add('marcado');
         });
+
+        remover
     };
 });
 
