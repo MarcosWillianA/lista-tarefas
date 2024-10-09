@@ -29,6 +29,7 @@ header, main, footer {
 
 header {
     margin-top: 60px;
+    text-align: center;
 }
 
 #container {
@@ -87,4 +88,9 @@ ul li {
 ul li.marcado {
     color: var(--var02);
     text-decoration: line-through;
+}
+
+footer p {
+    font-size: .7em;
+    text-align: center;
 }
