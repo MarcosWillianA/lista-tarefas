@@ -16,6 +16,7 @@ adicionarTarefa.addEventListener('click', () => {
         let p = document.createElement('p');
         let remover = document.createElement('button');
         
+        li.classList.add('itemDaLista');
         p.classList.add('tarefasNaLista');
         p.innerHTML = tarefaEscrita;
         remover.classList.add('remover');
@@ -31,7 +32,9 @@ adicionarTarefa.addEventListener('click', () => {
             p.classList.add('marcado');
         });
 
-        remover
+        remover.addEventListener('click', () => {
+            li.remove();
+        })
     };
 });
 
