@@ -78,3 +78,13 @@ header {
     padding: 5px;
     list-style-type: none;
 }
+
+ul li {
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li.marcado {
+    color: var(--var02);
+    text-decoration: line-through;
+}
