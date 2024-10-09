@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header, main, footer {
+    border: 1px solid red;
+    min-width: 320px;
+    max-width: 640px;
+    margin: auto;
+    padding: 10px;
+}
