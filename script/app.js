@@ -13,8 +13,15 @@ adicionarTarefa.addEventListener('click', () => {
         let tarefaEscrita = escreverTarefa.value;
         console.log(tarefaEscrita);
         let li = document.createElement('li');
+        li.classList.add('tarefasNaLista');
         li.innerHTML = tarefaEscrita;
         listaTarefas.appendChild(li);
+        escreverTarefa.value = '';
+
+        li.addEventListener('click', () => {
+            console.log('clicou');
+            li.classList.add('marcado');
+        });
     };
 });
 
